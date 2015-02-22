@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="factorie_2.11-1.2-SNAPSHOT-jar-with-dependencies">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/factorie_2.11-1.2-SNAPSHOT-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
