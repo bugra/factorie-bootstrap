@@ -70,16 +70,13 @@ object DB {
 
   def main(args: Array[String]) {
 
-    val idInvestorList = getListFromQueryField("SELECT id_investor FROM cbi_data.investor_view", "id_investor")
+    val idInvestorList = getListFromQueryField("", "")
     println(idInvestorList)
 
     val conn = getConnection
     val statement = conn.createStatement
 
-    val titleContentQuery = "SELECT a.id_news, a.title, a.content FROM cbi_news.cb_company_news a " +
-                            "JOIN cbi_news.cb_investor_news_relationship b " +
-                            "ON a.id_news=b.id_news " +
-                            "WHERE b.id_investor = %s "
+    val titleContentQuery = ""
 
     for (idInvestor <- idInvestorList) {
       val resultSet2 = statement.executeQuery(titleContentQuery.format(idInvestor))
